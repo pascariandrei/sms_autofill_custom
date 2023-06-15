@@ -103,7 +103,7 @@ class _PinFieldAutoFillState extends State<PinFieldAutoFill> with CodeAutoFill {
       cursor: widget.cursor,
       autofillHints: const <String>[AutofillHints.oneTimeCode],
       textCapitalization: TextCapitalization.none,
-      toolbarOptions: ToolbarOptions(paste: true),
+      toolbarOptions: ToolbarOptions(paste: true,copy: true,selectAll: true,cut: true),
       keyboardType: widget.keyboardType,
       autoFocus: widget.autoFocus,
       controller: controller,
